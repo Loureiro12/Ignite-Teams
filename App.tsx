@@ -9,7 +9,7 @@ import {
 import theme from "@theme/index";
 
 import { Loading } from "@components/Loading";
-import { Players } from "@screens/Players";
+import { Routes } from "@routes/index";
 
 export default function App() {
   const [fontLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
@@ -20,7 +20,7 @@ export default function App() {
         barStyle="light-content"
         translucent
         />
-      {fontLoaded ? <Players /> : <Loading />}
+      {fontLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }
